@@ -14,20 +14,17 @@
   <!--**-->
   <!--**-->
   <title>Дом-страница А.Д.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"/>
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/site.js"></script>
+  <script src="js/react/react.js"></script>
+  <script src="js/react/react-dom.js"></script>
+  <script src="js/react/browser.min.js"></script>
   <body>
-    <div class="b-header container-fluid">
-      <h1><span class="b-header__title hidden-sm hidden-xs">Домашняя страница Александра Добытина</span><span class="b-header__title hidden-lg hidden-md">Дом-страница Александра Добытина</span></h1>
-      <nav class="b-header__navigation b-header-navigation">
-        <div class="b-header-navigation__element b-header-navigation__element--general"><a href="#3" class="b-header-navigation__link">Главная</a></div>
-        <div class="b-header-navigation__element b-header-navigation__element--resume"><a href="#3" class="b-header-navigation__link">Резюме</a></div>
-        <div class="b-header-navigation__element b-header-navigation__element--portfolio"><a href="#3" class="b-header-navigation__link">Портфолио</a></div>
-      </nav>
-    </div>
+    <div id="root"></div>
   </body>
 </html>
+<script type="text/babel" src="js/site.js"></script>

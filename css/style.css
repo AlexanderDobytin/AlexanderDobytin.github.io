@@ -4,7 +4,26 @@ h1 {
   text-align: right;
 }
 body {
-  background: url(../images/shattered-island.gif) 50%;
+  background: url(../images/chalkboard.jpg) 50%;
+  font-family: 'Roboto', sans-serif;
+}
+.b-header__pix {
+  width: 100%;
+  height: 20vw;
+  min-height: 200px;
+  background: url(../images/myself.png) no-repeat 50%;
+  background-size: cover;
+  transition: 0.3s;
+}
+.b-header__pix--hide {
+  min-height: 0px;
+  height: 5vh;
+}
+.b-header__title {
+  cursor: pointer;
+}
+.b-header__title--active span {
+  color: #fff;
 }
 .b-header-navigation {
   position: absolute;
@@ -48,4 +67,159 @@ body {
 }
 .b-header-navigation:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+.b-navigation {
+  margin-top: 25px;
+}
+.b-navigation__element {
+  margin-bottom: 25px;
+  position: relative;
+}
+.b-navigation__element:before {
+  width: 0px;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  transition: width 0.3s, background-color 0.4s ease;
+  pointer-events: none;
+}
+.b-navigation__element:hover:before {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.b-navigation__link {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  color: #ccc;
+  background-color: transparent;
+  line-height: 50px;
+  font-size: 20px;
+  display: inline-block;
+  transition: color .2s;
+  position: relative;
+  z-index: 9;
+}
+.b-navigation__link:hover,
+.b-navigation__link:focus,
+.b-navigation__link:active {
+  text-decoration: none;
+  color: #fff;
+}
+.b-content {
+  padding: 15px;
+}
+.b-content__title {
+  color: white;
+  padding: 0 15px;
+}
+.b-content p {
+  color: white;
+}
+.b-resume {
+  margin-top: 20px;
+}
+.b-resume-education {
+  margin-bottom: 40px;
+}
+.b-resume-education__line {
+  display: block;
+  padding-bottom: 10px;
+  color: white;
+}
+.b-resume-education__name {
+  font-size: 18px;
+}
+.b-resume-education__age {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.b-resume-education__vers {
+  font-size: 16px;
+  padding-bottom: 0px;
+}
+.b-resume-education__course {
+  padding-bottom: 0px;
+}
+.b-experience-time {
+  color: white;
+  font-size: 14px;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+.b-experience-time__duration {
+  font-size: 62px;
+  line-height: 60px;
+  color: white;
+  display: inline-block;
+  margin-right: 5px;
+}
+.b-experience-time__normal {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.b-experience-portfolio {
+  color: white;
+  font-size: 14px;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+.b-experience-portfolio__title {
+  margin-bottom: 10px;
+}
+.b-experience-portfolio__link {
+  color: white;
+  text-decoration: none;
+}
+.b-experience-portfolio__link:hover,
+.b-experience-portfolio__link:focus,
+.b-experience-portfolio__link:active {
+  color: #ccc;
+  text-decoration: none;
+}
+.b-experience-portfolio__name {
+  font-size: 16px;
+}
+.b-experience-portfolio__work {
+  display: inline-block;
+  color: #ccc;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.b-experience-portfolio__item {
+  margin-bottom: 10px;
+}
+.b-tech {
+  color: #ccc;
+}
+.b-tech__title {
+  color: #fff;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.b-tech__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  filter: grayscale(50%);
+}
+.b-tech__pix {
+  max-width: 100%;
+  max-height: 100%;
+}
+.b-tech__element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.b-tech__item {
+  margin-bottom: 30px;
 }
