@@ -223,3 +223,62 @@ body {
 .b-tech__item {
   margin-bottom: 30px;
 }
+.b-contact {
+  margin-top: 20px;
+}
+.b-contact-form {
+  margin-bottom: 40px;
+  height: auto;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.b-contact-form--send {
+  height: 0px;
+  margin: 0px;
+}
+.b-contact-form__input {
+  width: 100%;
+  height: 20vh;
+  min-height: 200px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  transition: .3s ;
+  box-shadow: none;
+}
+.b-contact-form__input:focus {
+  -webkit-box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+  -moz-box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+  box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+}
+.b-contact-form__button {
+  width: 100%;
+  border: 2px solid #ccc;
+  background: none;
+  margin-top: 20px;
+  color: #ccc;
+  padding: 10px;
+  outline: none;
+  transition: .3s;
+  display: none;
+}
+.b-contact-form__button:hover {
+  -webkit-box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+  -moz-box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+  box-shadow: inset 0px -129px 187px -25px rgba(242, 234, 242, 0.3);
+}
+.b-contact-form__title {
+  color: #fff;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.b-contact-form__done {
+  display: none;
+}
+.b-contact-form__enable {
+  display: block;
+}
