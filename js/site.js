@@ -40,14 +40,15 @@ var Exp = React.createClass({
             <div className="glyphicon glyphicon-send"> </div><span> Полет нормальный</span></span></div>
         <div className="b-experience-portfolio col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <h3 className="b-experience-portfolio__title">Последние работы :</h3>
+       <div className="b-experience-portfolio__item"><a href="https://aidsquiltonline.org/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Сайт памяти «Квилт»</span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
           <div className="b-experience-portfolio__item"><a href="http://ermolaev-beer.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Пивоварня Ермолаев</span></a><span className="b-experience-portfolio__work">Фул-стэк</span></div>
          { /*<div className="b-experience-portfolio__item"><a href="http://atmyplace.ru/" rel="nofollow noopener" target="_blank" disable="disable" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магази ЭтМайПлэйс</span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
           */}<div className="b-experience-portfolio__item"><a href="http://tyumeco.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Пивоварня ТюмЭкоБир</span></a><span className="b-experience-portfolio__work">Фул-стэк</span></div>
-            <div className="b-experience-portfolio__item"><a href="https://aidsquiltonline.org/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
-              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Сайт памяти "Квилт"</span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
+           
                    <div className="b-experience-portfolio__item"><a href="http://t4l.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магазин Технологии для жизни </span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
         </div>l
