@@ -14,7 +14,9 @@ class Calendar {
 
     initAddForm() {
         let self = this;
+        let request = {};
         let bigData = localStorage.getItem("calendar")
+        
         bigData !== undefined ? bigData = JSON.parse(bigData) : bigData = {};
         $(document).on('submit', '.b-tooltip__form', function (event) {
             event.preventDefault();
@@ -29,8 +31,15 @@ class Calendar {
                 subtitle: dataContainer.subtitle,
                 text: dataContainer.text
             }
-            let request = Object.assign(bigData, dataType)
+            
+            if(bigData == null){
+                request = dataType
+            }else{
+            request = Object.assign(bigData, dataType)
+            }
+            
 
+             
             self.setData(request);
 
 
