@@ -15,11 +15,11 @@ class Calendar {
     initAddForm() {
         let self = this;
         let request = {};
-        let bigData = localStorage.getItem("calendar")
-        
-        bigData !== undefined ? bigData = JSON.parse(bigData) : bigData = {};
+       
         $(document).on('submit', '.b-tooltip__form', function (event) {
             event.preventDefault();
+            let bigData = localStorage.getItem("calendar")
+            bigData !== undefined ? bigData = JSON.parse(bigData) : bigData = {};
             let formdate = $(this).serializeArray();
             let dataContainer = {};
             let dataType = {};
@@ -86,8 +86,9 @@ class Calendar {
 
     }
     setData(data) {
-        // localStorage.setItem('calendar',JSON.stringify(bigData));
+       
         localStorage.setItem('calendar', JSON.stringify(data));
+        console.log(JSON.parse(localStorage.getItem("calendar")))
         this.start()
     }
     itemHeight() {
@@ -264,73 +265,3 @@ $(document).ready(function () {
 
 
 
-
- /* initFastForm(){
-        let self = this
-
-        $('.b-header-menu__element--add').tooltipster({
-            trigger: 'click',
-            animation: 'fade',
-            theme: 'tooltipster-light',
-            delay: 200,
-            side:'bottom',
-            contentAsHTML:true,
-            interactive:true,
-            functionBefore: function(instance, helper) {
-
-                instance.content(self.addFastForm(instance,helper));
-               
-               
-            },
-            functionReady:function(){
-                
-                self.fastFormcounter = 1;
-                $('html').find('.b-tooltip__input--fast').on('keypress',function(event){
-                    self.validateFastForm( this,event )
-                });
-                
-            },
-            functionPosition: function(instance, helper, position){
-                position.coord.top += 10;
-                position.coord.left += 100;
-                return position;
-            }
-        })
-    }
-    validateFastForm(item,event){
-        
-        if(this.fastFormcounter == 1){
-           console.log(event.key.match(/\d\s+/g))
-            if(event.key.match(/'\d+\s') == null){
-                event.preventDefault();
-                return false;
-
-            }else{
-                if($(item).val().length > 1 ){
-                    this.fastFormcounter = 2
-                    item.value += ' ';
-                    event.preventDefault();
-                    return false;
-                }
-            }
-        }else if(this.fastFormcounter == 2){
-            if(event.key.match(/\d+/g) !== null){
-                event.preventDefault();
-                return false;
-
-            }else{
-                console.log(event.key)
-            }
-        }
-    }
-    addFastForm(instance,helper){
-    
-    let request = `
-    <form  class="b-tooltip__form b-tooltip__form--fast">
-    
-      <input id="fastInput" type="text" name="title" placeholder="5 марта, День рождения" class="b-tooltip__input b-tooltip__input--fast form-control">
-    
-    </form>
-    `
-    return request;
-    }*/

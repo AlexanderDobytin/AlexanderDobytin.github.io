@@ -1,10 +1,20 @@
 .flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 @font-face {
@@ -16,28 +26,44 @@ body {
   min-width: 1170px;
 }
 .b-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 50px 0 20px;
 }
 .b-header__wrapper {
+  -webkit-box-shadow: 0px 8px 11px -6px rgba(181, 179, 179, 0.75);
   box-shadow: 0px 8px 11px -6px rgba(181, 179, 179, 0.75);
   background-color: #f4f4f4;
 }
 .b-header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .b-header-menu__element {
   margin-right: 10px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .b-header-menu__element:last-child {
   margin-right: 0px;
 }
 .b-header-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .b-header-search__icon {
@@ -47,7 +73,11 @@ body {
   min-width: 260px;
 }
 .b-calendar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 10px 0;
 }
@@ -59,24 +89,37 @@ body {
   margin-left: 10px;
 }
 .b-calendar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
 .b-calendar-item {
   width: 14%;
   border: 1px solid #ebebeb;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 .b-calendar-item:hover {
+  -webkit-box-shadow: inset 0px 0px 6px 3px rgba(83, 83, 83, 0.15);
   box-shadow: inset 0px 0px 6px 3px rgba(83, 83, 83, 0.15);
 }
 .b-calendar-item--active {
   background-color: #ddd;
 }
 .b-calendar-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 5px 10px;
 }
