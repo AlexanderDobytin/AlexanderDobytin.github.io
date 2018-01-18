@@ -42,6 +42,12 @@
 .b-popup-header__button {
   margin: .5rem;
 }
+.b-popup-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+}
 .b-page {
   display: flex;
   align-items: center;
